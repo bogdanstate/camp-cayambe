@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="{{ "style.css" | relURL }}">
 </head>
 <body class="{{ if .IsHome }}home{{ else }}inner{{ end }}">
-{{ partial "nav.html" . }}
+{{ if not .IsHome }}{{ partial "nav.html" . }}{{ end }}
 {{ block "main" . }}{{ end }}
 </body>
 </html>

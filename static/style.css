@@ -5,8 +5,6 @@
   --panel: rgba(251, 251, 248, .95);
   --accent: #2f5d50;
   --error: #a3271f;
-  --nav-bg: rgba(12, 18, 30, .82);
-  --nav-fg: #f4f4f0;
   --scrim: rgba(10, 16, 28, .52);
 }
 @media (prefers-color-scheme: dark) {
@@ -47,7 +45,29 @@ body.inner { --scrim: rgba(10, 16, 28, .6); }
   }
 }
 
-/* Menu: its own solid bar, so it never sits directly on the photo. */
+/* Menu buttons, shared by the landing menu and the inner-page bar. */
+.hero-menu a, .nav nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: .55rem 1.1rem;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  text-shadow: none;
+  border: 1.5px solid rgba(255, 255, 255, .7);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, .35);
+  transition: background .15s, color .15s;
+}
+.hero-menu a:hover, .nav nav a:hover,
+.hero-menu a:focus-visible, .nav nav a:focus-visible { background: rgba(255, 255, 255, .18); }
+.hero-menu a.primary, .nav nav a.primary,
+.nav nav a[aria-current="page"] { color: #111; background: #fff; border-color: #fff; }
+.hero-menu a.primary:hover, .nav nav a.primary:hover { background: #e8e8e2; }
+
+/* Inner pages: a solid bar, so the menu never sits directly on the photo. */
 .nav {
   position: sticky;
   top: 0;
@@ -56,33 +76,60 @@ body.inner { --scrim: rgba(10, 16, 28, .6); }
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: .5rem 1.5rem;
+  gap: .75rem 1.5rem;
   padding: .75rem 1rem;
-  background: var(--nav-bg);
+  background: rgba(8, 10, 14, .9);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
-.nav a { color: var(--nav-fg); text-decoration: none; }
-.brand { font-weight: 700; letter-spacing: .02em; }
-.nav nav { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; font-size: .95rem; }
-.nav nav a { opacity: .85; padding: .15rem 0; border-bottom: 2px solid transparent; }
-.nav nav a:hover { opacity: 1; }
-.nav nav a[aria-current="page"] { opacity: 1; border-bottom-color: currentColor; }
+.brand { color: #fff; font-weight: 700; font-size: 1.15rem; letter-spacing: .02em; text-decoration: none; }
+.nav nav { display: flex; flex-wrap: wrap; gap: .5rem; }
+.nav nav a { min-height: 40px; padding: .4rem .95rem; font-size: .95rem; }
 
-/* Landing */
+/* Landing: tagline over the photo, menu at the bottom over a fade to black. */
 .hero {
-  min-height: calc(100vh - 3.25rem);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 1rem;
-  text-align: center;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  grid-template-rows: 1fr auto;
   color: #fff;
+  text-align: center;
+}
+.hero-text {
+  align-self: center;
+  padding: 3rem 1rem 1rem;
   text-shadow: 0 2px 16px rgba(0, 0, 0, .55);
 }
+.hero .kicker { margin: 0 0 .5rem; font-size: clamp(.95rem, 2.2vw, 1.15rem); font-weight: 600; letter-spacing: .18em; text-transform: uppercase; }
 .hero h1 { margin: 0; font-size: clamp(2.2rem, 7vw, 4.5rem); line-height: 1.1; letter-spacing: -.01em; }
-.hero p { margin: .75rem 0 0; font-size: clamp(1rem, 2.5vw, 1.25rem); }
+.hero-text p:last-child { margin: .75rem 0 0; font-size: clamp(1rem, 2.5vw, 1.25rem); }
+.hero-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .75rem;
+  padding: 5rem 1rem 2.5rem;
+  padding-bottom: max(2.5rem, env(safe-area-inset-bottom));
+  background: linear-gradient(to top, rgba(0, 0, 0, .92) 0%, rgba(0, 0, 0, .75) 55%, transparent 100%);
+}
+.hero-menu a { min-height: 52px; padding: .7rem 1.5rem; font-size: 1.1rem; }
+
+@media (max-width: 640px) {
+  /* Two-column button grid; Expression of Interest spans the full width. */
+  .hero-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .6rem;
+    padding: 4rem 16px 1.5rem;
+    padding-bottom: max(1.5rem, env(safe-area-inset-bottom));
+  }
+  .hero-menu a { padding: .7rem .5rem; font-size: 1.05rem; }
+  .hero-menu a.primary { grid-column: 1 / -1; order: -1; }
+  /* Inner pages: menu scrolls with the page rather than eating the screen. */
+  .nav { position: static; padding: .75rem 16px; }
+  .nav nav { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
+  .nav nav a.primary { grid-column: 1 / -1; }
+}
 
 /* Inner pages */
 .panel {

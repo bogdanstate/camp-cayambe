@@ -4,3 +4,4 @@ resources/_gen/
 .wrangler/
 node_modules/
 originals/
+.*.swp

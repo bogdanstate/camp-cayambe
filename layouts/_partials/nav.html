@@ -1,8 +1,4 @@
 <header class="nav">
   <a class="brand" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
-  <nav>
-    {{- range site.Menus.main }}
-    <a href="{{ .URL }}"{{ if $.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}</a>
-    {{- end }}
-  </nav>
+  <nav>{{ partial "menu.html" . }}</nav>
 </header>

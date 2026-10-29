@@ -6,9 +6,9 @@ days:
   - {day: 5, am: "TBD", pm: "Hike Up to 4500m", stay: "Camping", km: 3.5, vert: 450}
   - {day: 6, am: "Cayambe High Loop", pm: "Hike Down from Camp", stay: "Punanti", km: 11, vert: 1062}
   - {day: 7, am: "Blue Loop", pm: "BBQ", stay: "Punanti", km: 8.5, vert: 750}
-  - {day: 8, am: "Cerro Cusin - Imbabura? - Antoine ideas", pm: "Jacuzzi / Beer", stay: "Punanti", km: 40, vert: 2800}
+  - {day: 8, am: "Cerro Cusin - Imbabura?", pm: "Jacuzzi / Beer", stay: "Punanti", km: 40, vert: 2800}
   - {day: 9, am: "Climbing?", pm: "Yellow Loop", stay: "Punanti", km: 12.5, vert: 700}
-  - {day: 10, am: "Local Villages Marathon Loop - Antoine Ideas", pm: "Jacuzzi / Beer", stay: "Punanti", km: 42, vert: 1500}
+  - {day: 10, am: "Local Villages Marathon Loop", pm: "Jacuzzi / Beer", stay: "Punanti", km: 42, vert: 1500}
   - {day: 11, am: "Climbing", pm: "Red Loop", stay: "Punanti", km: 21, vert: 1100}
   - {day: 12, am: "Last-minute logistics", pm: "Travel to Cayambe Refugio", stay: "Refugio", km: 2, vert: 300}
   - {day: 13, am: "Cayambe Summit", pm: "BBQ", stay: "Punanti", km: 10, vert: 1400}

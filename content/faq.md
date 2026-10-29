@@ -4,7 +4,7 @@ title: "FAQ"
 
 # What is this thing?
 
-It's a two-week altitude trail running camp at altitude, with some rock climbing thrown in.
+It's a two-week trail running camp at altitude, with some rock climbing thrown in. We finish by climbing a big, glaciated mountain.
 
 # Why is it called Camp Cayambe?
 
@@ -24,7 +24,7 @@ Everything from landing at Quito airport to returning to Quito airport - room, b
 
 # Is Ecuador safe?
 
-Rather than try to give a definitive answer, it's best to point out that [1,357,873 people visited Ecuador in 2025](https://www.ceicdata.com/en/indicator/ecuador/visitor-arrivals), most of them without issue. There are [travel advisories](https://www.safetravel.govt.nz/destinations/ecuador) to pay attention to for parts of Ecuador, but we would not really venture there as part of this trip. That being said, all travel involves some risk, as do all mountains, and taking appropriate precautions is sensible. The camp includes transfer arrangements (with a known driver from the local rural community where Punanti is located) to and from Quito airport. Once at Punanti the biggest hazard are the llamas, which can be vicious!
+Rather than try to give a definitive answer, it's best to point out that [1,357,873 people visited Ecuador in 2025](https://www.ceicdata.com/en/indicator/ecuador/visitor-arrivals), most of them without issue. There are [travel advisories](https://www.safetravel.govt.nz/destinations/ecuador) to pay attention to for parts of Ecuador, but we would not really venture there as part of this trip. That being said, all travel involves some risk, as do all mountains, and taking appropriate precautions is sensible. The camp includes transfer arrangements (with a known driver from the local rural community where Punanti is located) to and from Quito airport. Once at Punanti the biggest hazard is the llamas, which can be vicious!
 
 # What prior experience is required?
 

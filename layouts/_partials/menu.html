@@ -1,0 +1,3 @@
+{{- range site.Menus.main }}
+<a href="{{ .URL }}"{{ if eq .PageRef "/eoi" }} class="primary"{{ end }}{{ if $.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}</a>
+{{- end }}
