@@ -5,4 +5,4 @@ disableKinds = ['taxonomy', 'term', 'section', 'page', 'RSS', 'sitemap']
 
 [params]
   start = '2027-04-18'
-  eoiEndpoint = 'https://camp-cayambe-eoi.CHANGE-ME.workers.dev/eoi'
+  eoiEndpoint = 'https://camp-cayambe-eoi.wreckd.workers.dev/eoi'
