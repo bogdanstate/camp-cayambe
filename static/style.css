@@ -7,7 +7,7 @@
   --error: #a3271f;
   --nav-bg: rgba(12, 18, 30, .82);
   --nav-fg: #f4f4f0;
-  --scrim: rgba(10, 16, 28, .45);
+  --scrim: rgba(10, 16, 28, .52);
 }
 @media (prefers-color-scheme: dark) {
   :root {
