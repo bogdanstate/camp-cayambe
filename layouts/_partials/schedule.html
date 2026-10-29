@@ -9,9 +9,9 @@
   <tbody>
   {{- range site.Data.schedule.days }}
     <tr>
-      <td class="nowrap">{{ ($start.AddDate 0 0 (sub .day 1)).Format (i18n "dayFormat") }}</td>
-      <td class="n metric">{{ if isset . "km" }}{{ .km }}{{ end }}</td>
-      <td class="n metric">{{ if isset . "vert" }}{{ .vert }}{{ end }}</td>
+      <td class="nowrap">{{ time.Format (i18n "dayFormat") ($start.AddDate 0 0 (sub .day 1)) }}</td>
+      <td class="n metric">{{ if isset . "km" }}{{ partial "num.html" .km }}{{ end }}</td>
+      <td class="n metric">{{ if isset . "vert" }}{{ partial "num.html" .vert }}{{ end }}</td>
       {{- $am := partial "tr.html" .am }}
       {{- $pm := partial "tr.html" .pm }}
       {{- if eq $am $pm }}
@@ -32,7 +32,7 @@
   <thead><tr><th></th><th class="n">{{ i18n "km" }}</th><th class="n">{{ i18n "vert" }}</th><th class="n">{{ i18n "climbingSessions" }}</th></tr></thead>
   <tbody>
   {{- range site.Data.schedule.weeks }}
-    <tr><td>{{ partial "tr.html" .name }}</td><td class="n metric">{{ .km }}</td><td class="n metric">{{ .vert }}</td><td class="n">{{ .climbing }}</td></tr>
+    <tr><td>{{ partial "tr.html" .name }}</td><td class="n metric">{{ partial "num.html" .km }}</td><td class="n metric">{{ partial "num.html" .vert }}</td><td class="n">{{ .climbing }}</td></tr>
   {{- end }}
   </tbody>
 </table>

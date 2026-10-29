@@ -2,6 +2,7 @@
 title: "Întrebări frecvente"
 menus:
   main:
+    name: "Întrebări"
     weight: 30
 ---
 

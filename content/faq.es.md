@@ -2,6 +2,7 @@
 title: "Preguntas frecuentes"
 menus:
   main:
+    name: "Preguntas"
     weight: 30
 ---
 

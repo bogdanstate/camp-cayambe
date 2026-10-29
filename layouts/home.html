@@ -6,7 +6,7 @@
   <div class="hero-text">
     <p class="kicker">{{ site.Title }}</p>
     <h1>{{ i18n "tagline" }}</h1>
-    <p>{{ i18n "country" }} · {{ $start.Format (i18n "heroStart") }} – {{ $last.Format (i18n "heroEnd") }}</p>
+    <p>{{ i18n "country" }} · {{ time.Format (i18n "heroStart") $start }} – {{ time.Format (i18n "heroEnd") $last }}</p>
   </div>
   <nav class="hero-menu">{{ partial "menu.html" . }}</nav>
 </main>

@@ -1,0 +1,2 @@
+{{- $digits := 1 }}{{ if eq (float .) (math.Floor .) }}{{ $digits = 0 }}{{ end }}
+{{- return (lang.FormatNumber $digits .) }}
