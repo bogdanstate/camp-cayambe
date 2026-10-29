@@ -1,0 +1,7 @@
+{{ define "main" }}
+<main class="panel">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.partial }}{{ partial (printf "%s.html" .) $ }}{{ end }}
+  {{ .Content }}
+</main>
+{{ end }}

@@ -3,3 +3,4 @@ resources/_gen/
 .hugo_build.lock
 .wrangler/
 node_modules/
+originals/

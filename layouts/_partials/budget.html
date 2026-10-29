@@ -1,0 +1,7 @@
+<table class="narrow">
+  <tbody>
+  {{- range site.Data.schedule.terms }}
+    <tr><td>{{ index . 0 }}</td><td>{{ index . 1 }}</td></tr>
+  {{- end }}
+  </tbody>
+</table>

@@ -1,0 +1,17 @@
+<div class="gallery">
+  {{- range site.Data.photos.photos }}
+  <a href="{{ .src | relURL }}"><img src="{{ .thumb | relURL }}" width="{{ .w }}" height="{{ .h }}" loading="lazy" alt=""></a>
+  {{- end }}
+</div>
+<dialog id="lightbox"><img alt=""></dialog>
+<script>
+const box = document.getElementById("lightbox");
+document.querySelector(".gallery").addEventListener("click", function (e) {
+  const a = e.target.closest("a");
+  if (!a || !box.showModal) return;
+  e.preventDefault();
+  box.querySelector("img").src = a.href;
+  box.showModal();
+});
+box.addEventListener("click", () => box.close());
+</script>

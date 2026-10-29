@@ -1,0 +1,34 @@
+{{- $start := time.AsTime site.Params.start }}
+<div class="scroll">
+<table>
+  <thead>
+    <tr><th>Day</th><th>Date</th><th>AM</th><th>PM</th><th>Accommodation</th><th class="n">km</th><th class="n">Vert (m)</th></tr>
+  </thead>
+  <tbody>
+  {{- range site.Data.schedule.days }}
+    <tr>
+      <td>{{ .day }}</td>
+      <td class="nowrap">{{ ($start.AddDate 0 0 (sub .day 1)).Format "Mon 2 Jan" }}</td>
+      {{- if eq .am .pm }}
+      <td colspan="2">{{ .am }}</td>
+      {{- else }}
+      <td>{{ .am }}</td>
+      <td>{{ .pm }}</td>
+      {{- end }}
+      <td>{{ .stay }}</td>
+      <td class="n">{{ if isset . "km" }}{{ .km }}{{ end }}</td>
+      <td class="n">{{ if isset . "vert" }}{{ .vert }}{{ end }}</td>
+    </tr>
+  {{- end }}
+  </tbody>
+</table>
+</div>
+
+<table class="narrow">
+  <thead><tr><th></th><th class="n">km</th><th class="n">Vert (m)</th><th class="n">Climbing sessions</th></tr></thead>
+  <tbody>
+  {{- range site.Data.schedule.weeks }}
+    <tr><td>{{ .name }}</td><td class="n">{{ .km }}</td><td class="n">{{ .vert }}</td><td class="n">{{ .climbing }}</td></tr>
+  {{- end }}
+  </tbody>
+</table>

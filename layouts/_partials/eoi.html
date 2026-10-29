@@ -1,0 +1,40 @@
+<form id="eoi">
+  <label>Name <input name="name" required></label>
+  <label>Email <input name="email" type="email" required></label>
+  <label>Phone <input name="phone" type="tel"></label>
+  <label>Country <input name="country"></label>
+  <label>Climbing / mountaineering experience <textarea name="experience" rows="3"></textarea></label>
+  <label>Comments <textarea name="comments" rows="3"></textarea></label>
+  <input name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <button type="submit">Submit</button>
+  <p id="status" role="status"></p>
+</form>
+<script>
+document.getElementById("eoi").addEventListener("submit", async function (e) {
+  e.preventDefault();
+  const btn = this.querySelector("button");
+  const status = document.getElementById("status");
+  btn.disabled = true;
+  status.textContent = "";
+  status.className = "";
+  try {
+    const resp = await fetch({{ site.Params.eoiEndpoint }}, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(Object.fromEntries(new FormData(this))),
+    });
+    const result = await resp.json();
+    if (resp.ok) {
+      this.reset();
+      status.textContent = "Received.";
+    } else {
+      status.textContent = result.error || "Something went wrong. Please try again.";
+      status.className = "error";
+    }
+  } catch (err) {
+    status.textContent = "Network error. Please try again.";
+    status.className = "error";
+  }
+  btn.disabled = false;
+});
+</script>
