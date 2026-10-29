@@ -35,3 +35,7 @@ Mountaineering experience would be very useful for the Cayambe climb. The intent
 # Can I stay longer to climb more mountains?
 
 Yes, absolutely, this is very much the intent of the camp. You could for instance consider climbing Cotopaxi or Chimborazo, or even Antisana or Illiniza Sur if you're comfortable with technical climbs. We can help find guides who could facilitate these climbs, although these would be separate from the camp itself.
+
+# How do I sign up?
+
+First things first, fill out the [Expression of Interest form](/eoi/). An EOI simply confirms that, in principle, you'd be able to dedicate enough time and resources to getting to Ecuador and to Punanti. If we have enough EOIs then we will follow up with a firm price from Punanti Hostel, which will arrange all details once in Ecuador. You can change your mind before paying the 50% deposit, which would be due on February 19. After that the deposit would be non-refundable.
