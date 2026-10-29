@@ -2,10 +2,11 @@
 {{- $start := time.AsTime site.Params.start }}
 {{- $last := $start.AddDate 0 0 (sub (len site.Data.schedule.days) 1) }}
 <main class="hero">
+  {{ partial "langs.html" . }}
   <div class="hero-text">
     <p class="kicker">{{ site.Title }}</p>
-    <h1>Run. Climb. Relax. Repeat.</h1>
-    <p>Ecuador · {{ $start.Format "2 January" }} – {{ $last.Format "2 January 2006" }}</p>
+    <h1>{{ i18n "tagline" }}</h1>
+    <p>{{ i18n "country" }} · {{ $start.Format (i18n "heroStart") }} – {{ $last.Format (i18n "heroEnd") }}</p>
   </div>
   <nav class="hero-menu">{{ partial "menu.html" . }}</nav>
 </main>

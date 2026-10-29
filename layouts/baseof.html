@@ -1,11 +1,14 @@
 <!doctype html>
-<html lang="{{ site.LanguageCode }}">
+<html lang="{{ site.Language.Lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
   <link rel="preload" as="image" href="{{ "img/hero-1280.jpg" | relURL }}" media="(max-width: 900px)">
   <link rel="preload" as="image" href="{{ "img/hero-2400.jpg" | relURL }}" media="(min-width: 901px)">
+  {{- range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+  {{- end }}
   {{- with resources.Get "style.css" | fingerprint }}
   <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
   {{- end }}

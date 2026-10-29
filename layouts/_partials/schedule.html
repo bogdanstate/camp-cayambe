@@ -1,24 +1,26 @@
 {{- $start := time.AsTime site.Params.start }}
-<p class="scroll-hint" hidden>Scroll sideways for more →</p>
+<p class="scroll-hint" hidden>{{ i18n "scrollHint" }}</p>
 <div class="scroll-wrap">
 <div class="scroll">
 <table class="schedule">
   <thead>
-    <tr><th>Date</th><th class="n">km</th><th class="n">Vert (m)</th><th>AM</th><th>PM</th><th>Accommodation</th></tr>
+    <tr><th>{{ i18n "date" }}</th><th class="n">{{ i18n "km" }}</th><th class="n">{{ i18n "vert" }}</th><th>{{ i18n "am" }}</th><th>{{ i18n "pm" }}</th><th>{{ i18n "accommodation" }}</th></tr>
   </thead>
   <tbody>
   {{- range site.Data.schedule.days }}
     <tr>
-      <td class="nowrap">{{ ($start.AddDate 0 0 (sub .day 1)).Format "Mon 2 Jan" }}</td>
+      <td class="nowrap">{{ ($start.AddDate 0 0 (sub .day 1)).Format (i18n "dayFormat") }}</td>
       <td class="n metric">{{ if isset . "km" }}{{ .km }}{{ end }}</td>
       <td class="n metric">{{ if isset . "vert" }}{{ .vert }}{{ end }}</td>
-      {{- if eq .am .pm }}
-      <td colspan="2">{{ $.RenderString .am }}</td>
+      {{- $am := partial "tr.html" .am }}
+      {{- $pm := partial "tr.html" .pm }}
+      {{- if eq $am $pm }}
+      <td colspan="2">{{ $.RenderString $am }}</td>
       {{- else }}
-      <td>{{ $.RenderString .am }}</td>
-      <td>{{ $.RenderString .pm }}</td>
+      <td>{{ $.RenderString $am }}</td>
+      <td>{{ $.RenderString $pm }}</td>
       {{- end }}
-      <td>{{ .stay }}</td>
+      <td>{{ partial "tr.html" .stay }}</td>
     </tr>
   {{- end }}
   </tbody>
@@ -27,10 +29,10 @@
 </div>
 
 <table class="narrow">
-  <thead><tr><th></th><th class="n">km</th><th class="n">Vert (m)</th><th class="n">Climbing sessions</th></tr></thead>
+  <thead><tr><th></th><th class="n">{{ i18n "km" }}</th><th class="n">{{ i18n "vert" }}</th><th class="n">{{ i18n "climbingSessions" }}</th></tr></thead>
   <tbody>
   {{- range site.Data.schedule.weeks }}
-    <tr><td>{{ .name }}</td><td class="n metric">{{ .km }}</td><td class="n metric">{{ .vert }}</td><td class="n">{{ .climbing }}</td></tr>
+    <tr><td>{{ partial "tr.html" .name }}</td><td class="n metric">{{ .km }}</td><td class="n metric">{{ .vert }}</td><td class="n">{{ .climbing }}</td></tr>
   {{- end }}
   </tbody>
 </table>
