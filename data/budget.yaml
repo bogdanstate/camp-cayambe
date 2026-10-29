@@ -1,0 +1,25 @@
+# per: person = amount per person; group = fixed amount split across the group;
+# vehicle = amount per vehicle of `capacity` people (as many vehicles as needed).
+group_sizes: [8, 16]
+
+items:
+  - {item: "Punanti accommodation", basis: "10 nights × $40", per: person, amount: 400}
+  - {item: "Lunches", basis: "10 × $5", per: person, amount: 50}
+  - {item: "Airport transportation", basis: "$200 per vehicle of 8", per: vehicle, amount: 200, capacity: 8}
+  - {item: "Cusin / Imbabura", basis: "$100 for the group", per: group, amount: 100}
+  - {item: "Otavalo – Quito", basis: "$150 per vehicle of 4", per: vehicle, amount: 150, capacity: 4}
+  - {item: "Local transportation", basis: "$50 per person", per: person, amount: 50}
+  - {item: "Guide for Cayambe", basis: "$350 per climber", per: person, amount: 350}
+  - {item: "Guiding at Punanti", basis: "$800 for the group", per: group, amount: 800}
+
+not_included:
+  - "Flights to and from Quito"
+  - "Quito hotel (2 nights)"
+  - "Camping night, including gear and food"
+  - "Cayambe refuge night"
+  - "Climbing sessions"
+  - "Hot springs entry"
+  - "Meals in Quito, at camp and at the refuge"
+  - "BBQs"
+  - "Snacks and beverages at the lodge"
+  - "Mountaineering equipment rental"

@@ -170,6 +170,8 @@ body.inner { --scrim: rgba(10, 16, 28, .6); }
 .schedule td { min-width: 7rem; }
 .schedule td:nth-child(-n+3) { min-width: 0; }
 .metric { font-weight: 700; font-size: 1.05rem; color: var(--accent); }
+tr.total td { font-weight: 700; border-top: 2px solid var(--fg); }
+.panel ul { margin: 0 0 1rem; padding-left: 1.25rem; }
 table { border-collapse: collapse; width: 100%; font-size: .9rem; margin-bottom: 1.5rem; }
 table.narrow { width: auto; }
 th, td { text-align: left; vertical-align: top; padding: .4rem .6rem; border-bottom: 1px solid var(--line); }

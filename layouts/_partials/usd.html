@@ -1,0 +1,2 @@
+{{- $digits := 2 }}{{ if eq . (math.Floor .) }}{{ $digits = 0 }}{{ end }}
+{{- return (printf "$%s" (lang.FormatNumber $digits .)) }}

@@ -5,3 +5,46 @@
   {{- end }}
   </tbody>
 </table>
+
+{{- $sizes := site.Data.budget.group_sizes }}
+{{- $totals := newScratch }}
+<h2>Breakdown</h2>
+<div class="scroll">
+<table>
+  <thead>
+    <tr><th>Item</th><th>Basis</th>{{ range $sizes }}<th class="n">Per person ({{ . }} people)</th>{{ end }}</tr>
+  </thead>
+  <tbody>
+  {{- range site.Data.budget.items }}
+    {{- $item := . }}
+    <tr>
+      <td>{{ .item }}</td>
+      <td>{{ .basis }}</td>
+      {{- range $sizes }}
+      {{- $n := float . }}
+      {{- $v := float $item.amount }}
+      {{- if eq $item.per "group" }}{{ $v = div $v $n }}
+      {{- else if eq $item.per "vehicle" }}{{ $v = div (mul (math.Ceil (div $n (float $item.capacity))) $v) $n }}
+      {{- end }}
+      {{- $totals.Add (string .) $v }}
+      <td class="n">{{ partial "usd.html" $v }}</td>
+      {{- end }}
+    </tr>
+  {{- end }}
+    <tr class="total">
+      <td>Total</td>
+      <td></td>
+      {{- range $sizes }}
+      <td class="n">{{ partial "usd.html" ($totals.Get (string .)) }}</td>
+      {{- end }}
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Not included</h2>
+<ul>
+  {{- range site.Data.budget.not_included }}
+  <li>{{ . }}</li>
+  {{- end }}
+</ul>
