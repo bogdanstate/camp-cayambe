@@ -1,4 +1,4 @@
-const ALLOWED_ORIGINS = ["https://bogdanstate.github.io"];
+const ALLOWED_ORIGINS = ["https://cayambe.runs.nz", "https://bogdanstate.github.io"];
 const GITHUB_REPO = "bogdanstate/camp-cayambe-submissions";
 const FIELDS = ["name", "email", "phone", "country", "experience", "comments"];
 const REQUIRED_FIELDS = ["name", "email"];

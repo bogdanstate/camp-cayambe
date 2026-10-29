@@ -1,4 +1,4 @@
-baseURL = 'https://bogdanstate.github.io/camp-cayambe/'
+baseURL = 'https://cayambe.runs.nz/'
 languageCode = 'en'
 title = 'Camp Cayambe'
 disableKinds = ['taxonomy', 'term', 'section', 'RSS', 'sitemap']
