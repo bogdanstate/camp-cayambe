@@ -1,25 +1,60 @@
 # per: person = amount per person; group = fixed amount split across the group;
 # vehicle = amount per vehicle of `capacity` people (as many vehicles as needed).
+# Text fields are either a plain string (same in every language) or {en, es, ro}.
 group_sizes: [8, 16]
-
 items:
-  - {item: "Punanti accommodation", basis: "10 nights × $40", per: person, amount: 400}
-  - {item: "Lunches", basis: "10 × $5", per: person, amount: 50}
-  - {item: "Airport transportation", basis: "$200 per vehicle of 8", per: vehicle, amount: 200, capacity: 8}
-  - {item: "Cusin / Imbabura", basis: "$100 for the group", per: group, amount: 100}
-  - {item: "Otavalo – Quito", basis: "$150 per vehicle of 4", per: vehicle, amount: 150, capacity: 4}
-  - {item: "Local transportation", basis: "$50 per person", per: person, amount: 50}
-  - {item: "Guide for Cayambe", basis: "$350 per climber, including the refuge night", per: person, amount: 350}
-  - {item: "Guiding at Punanti", basis: "$100 per person", per: person, amount: 100}
-  - {item: "Climbing sessions", basis: "3 sessions, $60 per person", per: person, amount: 60}
-  - {item: "Quito hotel (Cumbayá)", basis: "2 nights × $100 per room, twin share", per: person, amount: 100}
-  - {item: "Airport shuttle", basis: "2 taxi rides × $20 per car of 4", per: vehicle, amount: 40, capacity: 4}
-
+- item: {en: Punanti accommodation, es: Alojamiento en Punanti, ro: Cazare la Punanti}
+  basis: {en: 10 nights × $40, es: 10 noches × $40, ro: 10 nopți × $40}
+  per: person
+  amount: 400
+- item: {en: Lunches, es: Almuerzos, ro: Prânzuri}
+  basis: 10 × $5
+  per: person
+  amount: 50
+- item: {en: Airport transportation, es: Traslado desde el aeropuerto, ro: Transfer de la aeroport}
+  basis: {en: $200 per vehicle of 8, es: $200 por vehículo de 8, ro: $200 pe vehicul de 8 persoane}
+  per: vehicle
+  amount: 200
+  capacity: 8
+- item: Cusin / Imbabura
+  basis: {en: $100 for the group, es: $100 para el grupo, ro: $100 pentru grup}
+  per: group
+  amount: 100
+- item: Otavalo – Quito
+  basis: {en: $150 per vehicle of 4, es: $150 por vehículo de 4, ro: $150 pe vehicul de 4 persoane}
+  per: vehicle
+  amount: 150
+  capacity: 4
+- item: {en: Local transportation, es: Transporte local, ro: Transport local}
+  basis: {en: $50 per person, es: $50 por persona, ro: $50 de persoană}
+  per: person
+  amount: 50
+- item: {en: Guide for Cayambe, es: Guía para el Cayambe, ro: Ghid pentru Cayambe}
+  basis: {en: '$350 per climber, including the refuge night', es: '$350 por escalador, incluida la noche en el refugio', ro: '$350 de alpinist, inclusiv noaptea la refugiu'}
+  per: person
+  amount: 350
+- item: {en: Guiding at Punanti, es: Guías en Punanti, ro: Ghizi la Punanti}
+  basis: {en: $100 per person, es: $100 por persona, ro: $100 de persoană}
+  per: person
+  amount: 100
+- item: {en: Climbing sessions, es: Sesiones de escalada, ro: Sesiuni de escaladă}
+  basis: {en: '3 sessions, $60 per person', es: '3 sesiones, $60 por persona', ro: '3 sesiuni, $60 de persoană'}
+  per: person
+  amount: 60
+- item: {en: Quito hotel (Cumbayá), es: Hotel en Quito (Cumbayá), ro: Hotel în Quito (Cumbayá)}
+  basis: {en: '2 nights × $100 per room, twin share', es: 2 noches × $100 por habitación doble compartida, ro: '2 nopți × $100 pe cameră dublă, împărțită'}
+  per: person
+  amount: 100
+- item: {en: Airport shuttle, es: Taxi al aeropuerto, ro: Taxi la aeroport}
+  basis: {en: 2 taxi rides × $20 per car of 4, es: 2 viajes en taxi × $20 por auto de 4, ro: 2 curse de taxi × $20 pe mașină de 4 persoane}
+  per: vehicle
+  amount: 40
+  capacity: 4
 not_included:
-  - "Flights to and from Quito"
-  - "Camping night, including gear and food"
-  - "Hot springs entry"
-  - "Meals in Quito, at camp and at the refuge"
-  - "BBQs"
-  - "Snacks and beverages at the lodge"
-  - "Mountaineering equipment rental"
+- {en: Flights to and from Quito, es: Vuelos a y desde Quito, ro: Zborurile spre și dinspre Quito}
+- {en: 'Camping night, including gear and food', es: 'Noche de campamento, incluidos equipo y comida', ro: 'Noaptea la cort, inclusiv echipament și mâncare'}
+- {en: Hot springs entry, es: Entrada a las termas, ro: Intrarea la izvoarele termale}
+- {en: 'Meals in Quito, at camp and at the refuge', es: 'Comidas en Quito, en el campamento y en el refugio', ro: 'Mesele în Quito, în tabără și la refugiu'}
+- {en: BBQs, es: Parrilladas, ro: Grătarele}
+- {en: Snacks and beverages at the lodge, es: Snacks y bebidas en el albergue, ro: Gustări și băuturi la cabană}
+- {en: Mountaineering equipment rental, es: Alquiler de equipo de montaña, ro: Închirierea echipamentului de alpinism}

@@ -1,30 +1,22 @@
 baseURL = 'https://cayambe.runs.nz/'
-languageCode = 'en'
 title = 'Camp Cayambe'
+defaultContentLanguage = 'en'
 disableKinds = ['taxonomy', 'term', 'section', 'RSS', 'sitemap']
 
 [params]
   start = '2027-04-18'
   eoiEndpoint = 'https://camp-cayambe-eoi.wreckd.workers.dev/eoi'
 
-[menus]
-  [[menus.main]]
-    name = 'Schedule'
-    pageRef = '/schedule'
-    weight = 10
-  [[menus.main]]
-    name = 'Budget'
-    pageRef = '/budget'
-    weight = 20
-  [[menus.main]]
-    name = 'FAQ'
-    pageRef = '/faq'
-    weight = 30
-  [[menus.main]]
-    name = 'Photos'
-    pageRef = '/photos'
-    weight = 40
-  [[menus.main]]
-    name = 'Expression of Interest'
-    pageRef = '/eoi'
-    weight = 50
+[languages]
+  [languages.en]
+    languageName = 'English'
+    languageCode = 'en'
+    weight = 1
+  [languages.es]
+    languageName = 'Español'
+    languageCode = 'es'
+    weight = 2
+  [languages.ro]
+    languageName = 'Română'
+    languageCode = 'ro'
+    weight = 3

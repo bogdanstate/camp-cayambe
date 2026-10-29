@@ -1,5 +1,8 @@
 ---
 title: "FAQ"
+menus:
+  main:
+    weight: 30
 ---
 
 # What is this thing?

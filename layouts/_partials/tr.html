@@ -1,0 +1,4 @@
+{{- /* A data text field: a plain string, or a map of language code to string (English fallback). */ -}}
+{{- $v := . }}
+{{- if reflect.IsMap . }}{{ $v = index . site.Language.Lang | default (index . "en") }}{{ end }}
+{{- return $v }}

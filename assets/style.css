@@ -83,11 +83,19 @@ body.inner { --scrim: rgba(10, 16, 28, .6); }
   backdrop-filter: blur(8px);
 }
 .brand { color: #fff; font-weight: 700; font-size: 1.15rem; letter-spacing: .02em; text-decoration: none; }
-.nav nav { display: flex; flex-wrap: wrap; gap: .5rem; }
+.nav nav { display: flex; flex-wrap: wrap; gap: .5rem; margin-left: auto; }
 .nav nav a { min-height: 40px; padding: .4rem .95rem; font-size: .95rem; }
+
+/* Language switcher: small and muted; the current language is highlighted. */
+.langs { display: flex; gap: .1rem; font-size: .8rem; font-weight: 600; letter-spacing: .04em; }
+.langs a { padding: .3rem .45rem; color: rgba(255, 255, 255, .72); text-decoration: none; border-radius: 4px; }
+.langs a:hover, .langs a:focus-visible { color: #fff; }
+.langs a[aria-current] { color: #fff; background: rgba(255, 255, 255, .16); }
+.hero > .langs { position: absolute; top: .75rem; right: .75rem; padding: .15rem; background: rgba(0, 0, 0, .35); border-radius: 6px; }
 
 /* Landing: tagline over the photo, menu at the bottom over a fade to black. */
 .hero {
+  position: relative;
   min-height: 100vh;
   min-height: 100svh;
   display: grid;
@@ -128,6 +136,8 @@ body.inner { --scrim: rgba(10, 16, 28, .6); }
   /* Inner pages: menu scrolls with the page rather than eating the screen. */
   .nav { position: static; padding: .75rem 16px; }
   .nav nav { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
+  .nav .langs { order: 1; margin-left: auto; }
+  .nav nav { order: 2; margin-left: 0; }
   .nav nav a.primary { grid-column: 1 / -1; }
 }
 

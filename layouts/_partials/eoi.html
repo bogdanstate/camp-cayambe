@@ -1,12 +1,12 @@
 <form id="eoi">
-  <label>Name <input name="name" required></label>
-  <label>Email <input name="email" type="email" required></label>
-  <label>Phone <input name="phone" type="tel"></label>
-  <label>Country <input name="country"></label>
-  <label>Climbing / mountaineering experience <textarea name="experience" rows="3"></textarea></label>
-  <label>Comments <textarea name="comments" rows="3"></textarea></label>
+  <label>{{ i18n "formName" }} <input name="name" required></label>
+  <label>{{ i18n "formEmail" }} <input name="email" type="email" required></label>
+  <label>{{ i18n "formPhone" }} <input name="phone" type="tel"></label>
+  <label>{{ i18n "formCountry" }} <input name="country"></label>
+  <label>{{ i18n "formExperience" }} <textarea name="experience" rows="3"></textarea></label>
+  <label>{{ i18n "formComments" }} <textarea name="comments" rows="3"></textarea></label>
   <input name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-  <button type="submit">Submit</button>
+  <button type="submit">{{ i18n "formSubmit" }}</button>
   <p id="status" role="status"></p>
 </form>
 <script>
@@ -26,13 +26,13 @@ document.getElementById("eoi").addEventListener("submit", async function (e) {
     const result = await resp.json();
     if (resp.ok) {
       this.reset();
-      status.textContent = "Received.";
+      status.textContent = {{ i18n "formReceived" }};
     } else {
-      status.textContent = result.error || "Something went wrong. Please try again.";
+      status.textContent = {{ i18n "formError" }};
       status.className = "error";
     }
   } catch (err) {
-    status.textContent = "Network error. Please try again.";
+    status.textContent = {{ i18n "formNetworkError" }};
     status.className = "error";
   }
   btn.disabled = false;

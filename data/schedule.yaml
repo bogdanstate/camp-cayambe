@@ -1,25 +1,102 @@
+# Text fields are either a plain string (same in every language) or {en, es, ro}.
 days:
-  - {day: 1, am: "Arrive Quito Airport", pm: "Arrive Quito Airport", stay: "Quito Hotel", km: 0, vert: 0}
-  - {day: 2, am: "[Arrive Punanti](https://punantihostel.com/what-is-punanti/#gethere)", pm: "[Red Loop](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Red%20%2D%20Trail%20%231)", stay: "Punanti", km: 12.5, vert: 700}
-  - {day: 3, am: "[Climbing](https://punantihostel.com/best-place-for-rock-climbing-in-ecuador/)", pm: "[Blue Loop](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Blue%20%2D%20Trail%20%232)?", stay: "Punanti", km: 12, vert: 750}
-  - {day: 4, am: "[Angureal Loop](https://punantihostel.com/hikes-and-summits-near-cayambe/#:~:text=Angureal%20Summit) - finish at [Termas Golondrinas](https://punantihostel.com/las-golondrinas-hot-springs/)", pm: "[Termas Golondrinas](https://punantihostel.com/las-golondrinas-hot-springs/)", stay: "Punanti", km: 18, vert: 1350}
-  - {day: 5, am: "TBD", pm: "[Hike Up to 4500m](https://punantihostel.com/acclimatization-week-in-ecuador/#:~:text=Days%205%20to%207)", stay: "Camping", km: 3.5, vert: 450}
-  - {day: 6, am: "[Cayambe High Loop](https://punantihostel.com/acclimatization-week-in-ecuador/#:~:text=Days%205%20to%207)", pm: "[Hike Down from Camp](https://punantihostel.com/acclimatization-week-in-ecuador/#:~:text=Days%205%20to%207)", stay: "Punanti", km: 11, vert: 1062}
-  - {day: 7, am: "[Blue Loop](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Blue%20%2D%20Trail%20%232)", pm: "BBQ", stay: "Punanti", km: 8.5, vert: 750}
-  - {day: 8, am: "[Cerro Cusin](https://punantihostel.com/hikes-and-summits-near-cayambe/#:~:text=Cusin%20Summit) - [Imbabura](https://punantihostel.com/hikes-and-summits-near-cayambe/#:~:text=Imbabura%20Summit)?", pm: "Jacuzzi / Beer", stay: "Punanti", km: 40, vert: 2800}
-  - {day: 9, am: "[Climbing](https://punantihostel.com/best-place-for-rock-climbing-in-ecuador/)?", pm: "[Yellow Loop](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Yellow%20%2D%20Trail%20%234)", stay: "Punanti", km: 12.5, vert: 700}
-  - {day: 10, am: "Local Villages Marathon Loop", pm: "Jacuzzi / Beer", stay: "Punanti", km: 42, vert: 1500}
-  - {day: 11, am: "[Climbing](https://punantihostel.com/best-place-for-rock-climbing-in-ecuador/)", pm: "[Red Loop](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Red%20%2D%20Trail%20%231)", stay: "Punanti", km: 21, vert: 1100}
-  - {day: 12, am: "Last-minute logistics", pm: "Travel to Cayambe Refugio", stay: "Refugio", km: 2, vert: 300}
-  - {day: 13, am: "Cayambe Summit", pm: "BBQ", stay: "Punanti", km: 10, vert: 1400}
-  - {day: 14, am: "Otavalo Market", pm: "Return to Quito", stay: "Quito Hotel"}
-
+- day: 1
+  am: {en: Arrive Quito Airport, es: Llegada al aeropuerto de Quito, ro: Sosire la aeroportul din Quito}
+  pm: {en: Arrive Quito Airport, es: Llegada al aeropuerto de Quito, ro: Sosire la aeroportul din Quito}
+  stay: {en: Quito Hotel, es: Hotel en Quito, ro: Hotel în Quito}
+  km: 0
+  vert: 0
+- day: 2
+  am: {en: '[Arrive Punanti](https://punantihostel.com/what-is-punanti/#gethere)', es: '[Llegada a Punanti](https://punantihostel.com/es/que-es-punanti/#gethere)', ro: '[Sosire la Punanti](https://punantihostel.com/what-is-punanti/#gethere)'}
+  pm: {en: '[Red Loop](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Red%20%2D%20Trail%20%231)', es: '[Circuito Rojo](https://punantihostel.com/es/senderos-cerca-del-volcan-punanti-cayambe/#:~:text=Rojo%20%2D%20Trail%20%231)', ro: '[Circuitul Roșu](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Red%20%2D%20Trail%20%231)'}
+  stay: Punanti
+  km: 12.5
+  vert: 700
+- day: 3
+  am: {en: '[Climbing](https://punantihostel.com/best-place-for-rock-climbing-in-ecuador/)', es: '[Escalada](https://punantihostel.com/es/el-mejor-lugar-para-escalar-en-ecuador/)', ro: '[Escaladă](https://punantihostel.com/best-place-for-rock-climbing-in-ecuador/)'}
+  pm: {en: '[Blue Loop](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Blue%20%2D%20Trail%20%232)?', es: '¿[Circuito Azul](https://punantihostel.com/es/senderos-cerca-del-volcan-punanti-cayambe/#:~:text=Azul%20%2D%20Trail%20%232)?', ro: '[Circuitul Albastru](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Blue%20%2D%20Trail%20%232)?'}
+  stay: Punanti
+  km: 12
+  vert: 750
+- day: 4
+  am: {en: '[Angureal Loop](https://punantihostel.com/hikes-and-summits-near-cayambe/#:~:text=Angureal%20Summit) - finish at [Termas Golondrinas](https://punantihostel.com/las-golondrinas-hot-springs/)', es: '[Circuito Angureal](https://punantihostel.com/es/excursiones-y-cumbres-cerca-de-cayambe/#:~:text=Cumbre%20Angureal) - final en [Termas Golondrinas](https://punantihostel.com/es/termas-de-las-golondrinas/)', ro: '[Circuitul Angureal](https://punantihostel.com/hikes-and-summits-near-cayambe/#:~:text=Angureal%20Summit) - final la [Termas Golondrinas](https://punantihostel.com/las-golondrinas-hot-springs/)'}
+  pm: {en: '[Termas Golondrinas](https://punantihostel.com/las-golondrinas-hot-springs/)', es: '[Termas Golondrinas](https://punantihostel.com/es/termas-de-las-golondrinas/)', ro: '[Termas Golondrinas](https://punantihostel.com/las-golondrinas-hot-springs/)'}
+  stay: Punanti
+  km: 18
+  vert: 1350
+- day: 5
+  am: {en: TBD, es: Por definir, ro: De stabilit}
+  pm: {en: '[Hike Up to 4500m](https://punantihostel.com/acclimatization-week-in-ecuador/#:~:text=Days%205%20to%207)', es: '[Subida a 4500 m](https://punantihostel.com/es/semana-de-aclimatacion-en-ecuador/#:~:text=D%C3%ADas%205%20a%207)', ro: '[Urcare la 4500 m](https://punantihostel.com/acclimatization-week-in-ecuador/#:~:text=Days%205%20to%207)'}
+  stay: {en: Camping, es: Campamento, ro: Cort}
+  km: 3.5
+  vert: 450
+- day: 6
+  am: {en: '[Cayambe High Loop](https://punantihostel.com/acclimatization-week-in-ecuador/#:~:text=Days%205%20to%207)', es: '[Circuito alto del Cayambe](https://punantihostel.com/es/semana-de-aclimatacion-en-ecuador/#:~:text=D%C3%ADas%205%20a%207)', ro: '[Circuitul înalt Cayambe](https://punantihostel.com/acclimatization-week-in-ecuador/#:~:text=Days%205%20to%207)'}
+  pm: {en: '[Hike Down from Camp](https://punantihostel.com/acclimatization-week-in-ecuador/#:~:text=Days%205%20to%207)', es: '[Bajada del campamento](https://punantihostel.com/es/semana-de-aclimatacion-en-ecuador/#:~:text=D%C3%ADas%205%20a%207)', ro: '[Coborâre din tabără](https://punantihostel.com/acclimatization-week-in-ecuador/#:~:text=Days%205%20to%207)'}
+  stay: Punanti
+  km: 11
+  vert: 1062
+- day: 7
+  am: {en: '[Blue Loop](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Blue%20%2D%20Trail%20%232)', es: '[Circuito Azul](https://punantihostel.com/es/senderos-cerca-del-volcan-punanti-cayambe/#:~:text=Azul%20%2D%20Trail%20%232)', ro: '[Circuitul Albastru](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Blue%20%2D%20Trail%20%232)'}
+  pm: {en: BBQ, es: Parrillada, ro: Grătar}
+  stay: Punanti
+  km: 8.5
+  vert: 750
+- day: 8
+  am: {en: '[Cerro Cusin](https://punantihostel.com/hikes-and-summits-near-cayambe/#:~:text=Cusin%20Summit) - [Imbabura](https://punantihostel.com/hikes-and-summits-near-cayambe/#:~:text=Imbabura%20Summit)?', es: '[Cerro Cusin](https://punantihostel.com/es/excursiones-y-cumbres-cerca-de-cayambe/#:~:text=Cumbre%20Cusin) - ¿[Imbabura](https://punantihostel.com/es/excursiones-y-cumbres-cerca-de-cayambe/#:~:text=Cumbre%20del%20Imbabura)?', ro: '[Cerro Cusin](https://punantihostel.com/hikes-and-summits-near-cayambe/#:~:text=Cusin%20Summit) - [Imbabura](https://punantihostel.com/hikes-and-summits-near-cayambe/#:~:text=Imbabura%20Summit)?'}
+  pm: {en: Jacuzzi / Beer, es: Jacuzzi / cerveza, ro: Jacuzzi / bere}
+  stay: Punanti
+  km: 40
+  vert: 2800
+- day: 9
+  am: {en: '[Climbing](https://punantihostel.com/best-place-for-rock-climbing-in-ecuador/)?', es: '¿[Escalada](https://punantihostel.com/es/el-mejor-lugar-para-escalar-en-ecuador/)?', ro: '[Escaladă](https://punantihostel.com/best-place-for-rock-climbing-in-ecuador/)?'}
+  pm: {en: '[Yellow Loop](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Yellow%20%2D%20Trail%20%234)', es: '[Circuito Amarillo](https://punantihostel.com/es/senderos-cerca-del-volcan-punanti-cayambe/#:~:text=Amarillo%20%2D%20Sendero%20%234)', ro: '[Circuitul Galben](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Yellow%20%2D%20Trail%20%234)'}
+  stay: Punanti
+  km: 12.5
+  vert: 700
+- day: 10
+  am: {en: Local Villages Marathon Loop, es: Maratón por las comunidades locales, ro: Maraton prin satele din zonă}
+  pm: {en: Jacuzzi / Beer, es: Jacuzzi / cerveza, ro: Jacuzzi / bere}
+  stay: Punanti
+  km: 42
+  vert: 1500
+- day: 11
+  am: {en: '[Climbing](https://punantihostel.com/best-place-for-rock-climbing-in-ecuador/)', es: '[Escalada](https://punantihostel.com/es/el-mejor-lugar-para-escalar-en-ecuador/)', ro: '[Escaladă](https://punantihostel.com/best-place-for-rock-climbing-in-ecuador/)'}
+  pm: {en: '[Red Loop](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Red%20%2D%20Trail%20%231)', es: '[Circuito Rojo](https://punantihostel.com/es/senderos-cerca-del-volcan-punanti-cayambe/#:~:text=Rojo%20%2D%20Trail%20%231)', ro: '[Circuitul Roșu](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Red%20%2D%20Trail%20%231)'}
+  stay: Punanti
+  km: 21
+  vert: 1100
+- day: 12
+  am: {en: Last-minute logistics, es: Logística de último momento, ro: Logistică de ultim moment}
+  pm: {en: Travel to Cayambe Refugio, es: Traslado al refugio del Cayambe, ro: Drum spre refugiul Cayambe}
+  stay: {en: Refugio, es: Refugio, ro: Refugiu}
+  km: 2
+  vert: 300
+- day: 13
+  am: {en: Cayambe Summit, es: Cumbre del Cayambe, ro: Vârful Cayambe}
+  pm: {en: BBQ, es: Parrillada, ro: Grătar}
+  stay: Punanti
+  km: 10
+  vert: 1400
+- day: 14
+  am: {en: Otavalo Market, es: Mercado de Otavalo, ro: Piața din Otavalo}
+  pm: {en: Return to Quito, es: Regreso a Quito, ro: Întoarcere la Quito}
+  stay: {en: Quito Hotel, es: Hotel en Quito, ro: Hotel în Quito}
 weeks:
-  - {name: "Week 1", km: 65.5, vert: 5062, climbing: 1}
-  - {name: "Week 2", km: 127.5, vert: 7800, climbing: 2}
-
+- name: {en: Week 1, es: Semana 1, ro: Săptămâna 1}
+  km: 65.5
+  vert: 5062
+  climbing: 1
+- name: {en: Week 2, es: Semana 2, ro: Săptămâna 2}
+  km: 127.5
+  vert: 7800
+  climbing: 2
 terms:
-  - ["(Approximate) cost / person", "USD 1,200"]
-  - ["Max capacity", "16"]
-  - ["EOIs close", "10 January 2027"]
-  - ["Deposit required", "50%, 2 months prior to first day (18 February 2027)"]
+- - {en: (Approximate) cost / person, es: Costo aproximado por persona, ro: Cost aproximativ / persoană}
+  - {en: 'USD 1,200', es: 1.200 USD, ro: 1.200 USD}
+- - {en: Max capacity, es: Capacidad máxima, ro: Capacitate maximă}
+  - '16'
+- - {en: EOIs close, es: Plazo para manifestar interés, ro: Termen pentru manifestarea interesului}
+  - {en: 10 January 2027, es: 10 de enero de 2027, ro: 10 ianuarie 2027}
+- - {en: Deposit required, es: Depósito, ro: Avans}
+  - {en: '50%, 2 months prior to first day (18 February 2027)', es: '50 %, 2 meses antes del primer día (18 de febrero de 2027)', ro: '50%, cu 2 luni înainte de prima zi (18 februarie 2027)'}

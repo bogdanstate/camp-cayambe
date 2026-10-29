@@ -1,0 +1,5 @@
+{{- /* Site-relative links ("/eoi/") stay within the current language. */ -}}
+{{- $u := .Destination }}
+{{- if strings.HasPrefix $u "/" }}{{ $u = printf "%s%s" (strings.TrimSuffix "/" site.Home.RelPermalink) $u }}{{ end -}}
+<a href="{{ $u | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}>{{ .Text }}</a>
+{{- /**/ -}}
