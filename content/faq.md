@@ -16,11 +16,11 @@ At [Punanti Mountain Lodge](https://punantihostel.com/), situated at 3,600m, ver
 
 # How much will this cost?
 
-Including the guided Cayambe climb, we're expecting a [budget](/budget/) of about $1,000 USD per person, exact numbers will depend on how many people express interest.
+Including the guided Cayambe climb, we're expecting a [budget](/budget/) of about $1,200 USD per person, exact numbers will depend on how many people express interest.
 
 # What does the camp include?
 
-Transfers from and to Quito airport, room and board at Punanti, lunches, local transportation, guiding at Punanti, the Cusin / Imbabura day and the guided Cayambe climb - see the [Budget](/budget/) for the breakdown. Not included: flights, the two Quito hotel nights, the camping and Cayambe refuge nights, climbing sessions, hot springs entry, meals in Quito / at camp / at the refuge, and BBQs. Snacks and beverages at the lodge are extra but reasonably priced. Rental of mountaineering equipment (if required) would be extra but also very reasonably priced.
+Transfers from and to Quito airport, two nights at a Quito hotel, room and board at Punanti, lunches, local transportation, guiding at Punanti, three climbing sessions, the Cusin / Imbabura day and the guided Cayambe climb (including the refuge night) - see the [Budget](/budget/) for the breakdown. Not included: flights, the camping night, hot springs entry, meals in Quito / at camp / at the refuge, and BBQs. Snacks and beverages at the lodge are extra but reasonably priced. Rental of mountaineering equipment (if required) would be extra but also very reasonably priced.
 
 # Is Ecuador safe?
 

@@ -15,11 +15,11 @@ days:
   - {day: 14, am: "Otavalo Market", pm: "Return to Quito", stay: "Quito Hotel"}
 
 weeks:
-  - {name: "Week 1", km: 65.5, vert: 5062, climbing: 2}
+  - {name: "Week 1", km: 65.5, vert: 5062, climbing: 1}
   - {name: "Week 2", km: 127.5, vert: 7800, climbing: 2}
 
 terms:
-  - ["(Approximate) cost / person", "USD 1000"]
+  - ["(Approximate) cost / person", "USD 1,200"]
   - ["Max capacity", "16"]
   - ["EOIs close", "10 January 2027"]
   - ["Deposit required", "50%, 2 months prior to first day (18 February 2027)"]

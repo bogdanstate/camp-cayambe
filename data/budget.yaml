@@ -9,15 +9,15 @@ items:
   - {item: "Cusin / Imbabura", basis: "$100 for the group", per: group, amount: 100}
   - {item: "Otavalo – Quito", basis: "$150 per vehicle of 4", per: vehicle, amount: 150, capacity: 4}
   - {item: "Local transportation", basis: "$50 per person", per: person, amount: 50}
-  - {item: "Guide for Cayambe", basis: "$350 per climber", per: person, amount: 350}
-  - {item: "Guiding at Punanti", basis: "$800 for the group", per: group, amount: 800}
+  - {item: "Guide for Cayambe", basis: "$350 per climber, including the refuge night", per: person, amount: 350}
+  - {item: "Guiding at Punanti", basis: "$100 per person", per: person, amount: 100}
+  - {item: "Climbing sessions", basis: "3 sessions, $60 per person", per: person, amount: 60}
+  - {item: "Quito hotel (Cumbayá)", basis: "2 nights × $100 per room, twin share", per: person, amount: 100}
+  - {item: "Airport shuttle", basis: "2 taxi rides × $20 per car of 4", per: vehicle, amount: 40, capacity: 4}
 
 not_included:
   - "Flights to and from Quito"
-  - "Quito hotel (2 nights)"
   - "Camping night, including gear and food"
-  - "Cayambe refuge night"
-  - "Climbing sessions"
   - "Hot springs entry"
   - "Meals in Quito, at camp and at the refuge"
   - "BBQs"
