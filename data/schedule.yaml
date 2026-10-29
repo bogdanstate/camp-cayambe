@@ -1,15 +1,15 @@
 days:
   - {day: 1, am: "Arrive Quito Airport", pm: "Arrive Quito Airport", stay: "Quito Hotel", km: 0, vert: 0}
-  - {day: 2, am: "Arrive Punanti", pm: "Red Loop", stay: "Punanti", km: 12.5, vert: 700}
-  - {day: 3, am: "Climbing", pm: "Blue Loop?", stay: "Punanti", km: 12, vert: 750}
-  - {day: 4, am: "Angureal Loop - finish at Termas Golondrinas", pm: "Termas Golondrinas", stay: "Punanti", km: 18, vert: 1350}
-  - {day: 5, am: "TBD", pm: "Hike Up to 4500m", stay: "Camping", km: 3.5, vert: 450}
-  - {day: 6, am: "Cayambe High Loop", pm: "Hike Down from Camp", stay: "Punanti", km: 11, vert: 1062}
-  - {day: 7, am: "Blue Loop", pm: "BBQ", stay: "Punanti", km: 8.5, vert: 750}
-  - {day: 8, am: "Cerro Cusin - Imbabura?", pm: "Jacuzzi / Beer", stay: "Punanti", km: 40, vert: 2800}
-  - {day: 9, am: "Climbing?", pm: "Yellow Loop", stay: "Punanti", km: 12.5, vert: 700}
+  - {day: 2, am: "[Arrive Punanti](https://punantihostel.com/what-is-punanti/#gethere)", pm: "[Red Loop](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Red%20%2D%20Trail%20%231)", stay: "Punanti", km: 12.5, vert: 700}
+  - {day: 3, am: "[Climbing](https://punantihostel.com/best-place-for-rock-climbing-in-ecuador/)", pm: "[Blue Loop](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Blue%20%2D%20Trail%20%232)?", stay: "Punanti", km: 12, vert: 750}
+  - {day: 4, am: "[Angureal Loop](https://punantihostel.com/hikes-and-summits-near-cayambe/#:~:text=Angureal%20Summit) - finish at [Termas Golondrinas](https://punantihostel.com/las-golondrinas-hot-springs/)", pm: "[Termas Golondrinas](https://punantihostel.com/las-golondrinas-hot-springs/)", stay: "Punanti", km: 18, vert: 1350}
+  - {day: 5, am: "TBD", pm: "[Hike Up to 4500m](https://punantihostel.com/acclimatization-week-in-ecuador/#:~:text=Days%205%20to%207)", stay: "Camping", km: 3.5, vert: 450}
+  - {day: 6, am: "[Cayambe High Loop](https://punantihostel.com/acclimatization-week-in-ecuador/#:~:text=Days%205%20to%207)", pm: "[Hike Down from Camp](https://punantihostel.com/acclimatization-week-in-ecuador/#:~:text=Days%205%20to%207)", stay: "Punanti", km: 11, vert: 1062}
+  - {day: 7, am: "[Blue Loop](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Blue%20%2D%20Trail%20%232)", pm: "BBQ", stay: "Punanti", km: 8.5, vert: 750}
+  - {day: 8, am: "[Cerro Cusin](https://punantihostel.com/hikes-and-summits-near-cayambe/#:~:text=Cusin%20Summit) - [Imbabura](https://punantihostel.com/hikes-and-summits-near-cayambe/#:~:text=Imbabura%20Summit)?", pm: "Jacuzzi / Beer", stay: "Punanti", km: 40, vert: 2800}
+  - {day: 9, am: "[Climbing](https://punantihostel.com/best-place-for-rock-climbing-in-ecuador/)?", pm: "[Yellow Loop](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Yellow%20%2D%20Trail%20%234)", stay: "Punanti", km: 12.5, vert: 700}
   - {day: 10, am: "Local Villages Marathon Loop", pm: "Jacuzzi / Beer", stay: "Punanti", km: 42, vert: 1500}
-  - {day: 11, am: "Climbing", pm: "Red Loop", stay: "Punanti", km: 21, vert: 1100}
+  - {day: 11, am: "[Climbing](https://punantihostel.com/best-place-for-rock-climbing-in-ecuador/)", pm: "[Red Loop](https://punantihostel.com/trails-near-punanti-cayambe-volcano/#:~:text=Red%20%2D%20Trail%20%231)", stay: "Punanti", km: 21, vert: 1100}
   - {day: 12, am: "Last-minute logistics", pm: "Travel to Cayambe Refugio", stay: "Refugio", km: 2, vert: 300}
   - {day: 13, am: "Cayambe Summit", pm: "BBQ", stay: "Punanti", km: 10, vert: 1400}
   - {day: 14, am: "Otavalo Market", pm: "Return to Quito", stay: "Quito Hotel"}

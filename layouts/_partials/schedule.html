@@ -10,10 +10,10 @@
       <td>{{ .day }}</td>
       <td class="nowrap">{{ ($start.AddDate 0 0 (sub .day 1)).Format "Mon 2 Jan" }}</td>
       {{- if eq .am .pm }}
-      <td colspan="2">{{ .am }}</td>
+      <td colspan="2">{{ $.RenderString .am }}</td>
       {{- else }}
-      <td>{{ .am }}</td>
-      <td>{{ .pm }}</td>
+      <td>{{ $.RenderString .am }}</td>
+      <td>{{ $.RenderString .pm }}</td>
       {{- end }}
       <td>{{ .stay }}</td>
       <td class="n">{{ if isset . "km" }}{{ .km }}{{ end }}</td>
