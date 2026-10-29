@@ -38,4 +38,4 @@ Yes, absolutely, this is very much the intent of the camp. You could for instanc
 
 # How do I sign up?
 
-First things first, fill out the [Expression of Interest form](/eoi/). An EOI simply confirms that, in principle, you'd be able to dedicate enough time and resources to getting to Ecuador and to Punanti. If we have enough EOIs then we will follow up with a firm price from Punanti Hostel, which will arrange all details once in Ecuador. You can change your mind before paying the 50% deposit, which would be due on February 19. After that the deposit would be non-refundable.
+First things first, fill out the [Expression of Interest form](/eoi/). An EOI simply confirms that, in principle, you'd be able to dedicate enough time and resources to getting to Ecuador and to Punanti. If we have enough EOIs then we will follow up with a firm price from Punanti Hostel, which will arrange all details once in Ecuador. You can change your mind before paying the 50% deposit, which would be due on 18 February. After that the deposit would be non-refundable.
