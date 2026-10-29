@@ -24,13 +24,13 @@ Everything from landing at Quito airport to returning to Quito airport - room, b
 
 # Is Ecuador safe?
 
-Rather than try to give a definitive answer, it's best to point out that [1,357,873 people visited Ecuador in 2025](https://www.ceicdata.com/en/indicator/ecuador/visitor-arrivals), most of them without issue. There are [travel advisories](https://www.safetravel.govt.nz/destinations/ecuador) to pay attention to for parts of Ecuador, but we would not really venture there as part of this trip. That being said, all travel involves some risk, as do all mountains, and taking appropriate precautions is sensible. The camp includes transfer arrangements (with a known driver from the local rural community where Punanti is located) to and from Quito airport. Once at Punanti the biggest hazard is the llamas, which can be vicious!
+Rather than try to give a definitive answer, it's best to point out that [1,357,873 people visited Ecuador in 2025](https://www.ceicdata.com/en/indicator/ecuador/visitor-arrivals), most of them without issue. There are [travel advisories](https://www.safetravel.govt.nz/destinations/ecuador) to pay attention to for parts of Ecuador, but we would not really venture there as part of this trip. That being said, all travel involves some risk, as do all mountains, and taking appropriate precautions is sensible. The camp includes transfer arrangements (with a known driver from the local rural community where Punanti is located) to and from Quito airport. Once at Punanti the biggest hazard are the llamas, which can be vicious!
 
 # What prior experience is required?
 
 For the trail running part, you should be a fit trail / mountain runner to be able to sustain effort at about 100-130 km / week. Pace is less important, as we will likely have multiple pace groups every day. 
 
-Mountaineering experience would be very useful for the Cayambe climb. The intention is to use the acclimation built up during the two weeks to climb some Ecuadorian mountains. Cayambe is an obvious one, since we will spend two weeks in the nearby foothills. If this is your first time with crampons and ice axe, it would make sense to talk to our guides about your level of comfort and additional options. 
+Mountaineering experience would be very useful for the [Cayambe climb](https://www.summitpost.org/cayambe/150297). The intention is to use the acclimation built up during the two weeks to climb some Ecuadorian mountains. Cayambe is an obvious one, since we will spend two weeks in the nearby foothills. If this is your first time with crampons and ice axe, it would make sense to talk to our guides about your level of comfort and additional options. 
 
 # Can I stay longer to climb more mountains?
 
