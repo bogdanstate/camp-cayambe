@@ -1,0 +1,25 @@
+days:
+  - {day: 1, am: "Arrive Quito Airport", pm: "Arrive Quito Airport", stay: "Quito Hotel", km: 0, vert: 0}
+  - {day: 2, am: "Arrive Punanti", pm: "Red Loop", stay: "Punanti", km: 12.5, vert: 700}
+  - {day: 3, am: "Climbing", pm: "Blue Loop?", stay: "Punanti", km: 12, vert: 750}
+  - {day: 4, am: "Angureal Loop - finish at Termas Golondrinas", pm: "Termas Golondrinas", stay: "Punanti", km: 18, vert: 1350}
+  - {day: 5, am: "TBD", pm: "Hike Up to 4500m", stay: "Camping", km: 3.5, vert: 450}
+  - {day: 6, am: "Cayambe High Loop", pm: "Hike Down from Camp", stay: "Punanti", km: 11, vert: 1062}
+  - {day: 7, am: "Blue Loop", pm: "BBQ", stay: "Punanti", km: 8.5, vert: 750}
+  - {day: 8, am: "Cerro Cusin - Imbabura? - Antoine ideas", pm: "Jacuzzi / Beer", stay: "Punanti", km: 40, vert: 2800}
+  - {day: 9, am: "Climbing?", pm: "Yellow Loop", stay: "Punanti", km: 12.5, vert: 700}
+  - {day: 10, am: "Local Villages Marathon Loop - Antoine Ideas", pm: "Jacuzzi / Beer", stay: "Punanti", km: 42, vert: 1500}
+  - {day: 11, am: "Climbing", pm: "Red Loop", stay: "Punanti", km: 21, vert: 1100}
+  - {day: 12, am: "Last-minute logistics", pm: "Travel to Cayambe Refugio", stay: "Refugio", km: 2, vert: 300}
+  - {day: 13, am: "Cayambe Summit", pm: "BBQ", stay: "Punanti", km: 10, vert: 1400}
+  - {day: 14, am: "Otavalo Market", pm: "Return to Quito", stay: "Quito Hotel"}
+
+weeks:
+  - {name: "Week 1", km: 65.5, vert: 5062, climbing: 2}
+  - {name: "Week 2", km: 127.5, vert: 7800, climbing: 2}
+
+terms:
+  - ["Price / person", "USD 1000"]
+  - ["Max capacity", "16"]
+  - ["Advance notice required", "15 January 2027"]
+  - ["Deposit required", "50%, 2 months prior to first day (18 February 2027)"]
