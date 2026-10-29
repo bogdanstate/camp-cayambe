@@ -19,7 +19,7 @@ weeks:
   - {name: "Week 2", km: 127.5, vert: 7800, climbing: 2}
 
 terms:
-  - ["Price / person", "USD 1000"]
+  - ["(Approximate) cost / person", "USD 1000"]
   - ["Max capacity", "16"]
-  - ["Advance notice required", "15 January 2027"]
+  - ["EOIs close", "10 January 2027"]
   - ["Deposit required", "50%, 2 months prior to first day (18 February 2027)"]
